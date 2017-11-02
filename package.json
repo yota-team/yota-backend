@@ -1,0 +1,21 @@
+{
+  "name": "yota-backend",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www",
+    "dev": "nodemon ./bin/www",
+    "test": "mocha"
+  },
+  "dependencies": {
+    "bcryptjs": "^2.4.3",
+    "body-parser": "~1.17.1",
+    "chai": "^4.1.2",
+    "chai-http": "^3.0.0",
+    "cors": "^2.8.4",
+    "express": "~4.15.2",
+    "jsonwebtoken": "^8.1.0",
+    "mongoose": "^4.12.6",
+    "redis": "^2.8.0"
+  }
+}
