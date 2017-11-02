@@ -11,11 +11,13 @@ var index = require('./routes/index');
 var cars = require('./routes/car');
 var destinations = require('./routes/destination');
 var positions = require('./routes/position');
+var dummy = require('./routes/dummy');
 
 app.use('/', index);
 app.use('/cars', cars);
 app.use('/destinations', destinations);
 app.use('/positions', positions);
+app.use('/dummy', dummy);
 
 app.use(function(req, res, next) {
   var err = new Error('Not Found');

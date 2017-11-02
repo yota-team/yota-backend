@@ -3,7 +3,7 @@ const Car = require('../models/Car');
 module.exports = {
   all: (req, res) => {
     Car.find()
-      .populate('destinations')
+      .populate('destination')
       .then(dataCar => res.send(dataCar))
       .catch(err => console.error(err))
   },
