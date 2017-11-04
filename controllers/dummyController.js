@@ -7,9 +7,9 @@ module.exports = {
     Destination.find()
       .then(response => {
         // console.log(response.length)
-        if (response.length != 0) {
-          res.send('DATA DUMMY SUDAH ADA')
-        } else {
+        // if (response.length != 0) {
+        //   res.send('DATA DUMMY SUDAH ADA')
+        // } else {
 
           var dummyDestinations = [
             {
@@ -136,7 +136,7 @@ module.exports = {
               .catch(err => console.error(err))
           })
 
-        }
+        // }
       })
       .catch(err => console.log(err))
   }
