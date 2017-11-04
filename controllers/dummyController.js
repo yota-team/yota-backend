@@ -70,83 +70,42 @@ module.exports = {
 
                           var dummyPositions = [
                             // mobil pertama
-                            {
-                              lat: -6.254394,
-                              lng: 106.7815577,
-                              car: dummyCars[0]._id
-                            },
-                            {
-                              lat: -6.254400,
-                              lng: 106.7815589,
-                              car: dummyCars[0]._id
-                            },
-                            {
-                              lat: -6.254410,
-                              lng: 106.7815589,
-                              car: dummyCars[0]._id
-                            },
-                            {
-                              lat: -6.254420,
-                              lng: 106.7815587,
-                              car: dummyCars[0]._id
-                            },
-                            {
-                              lat: -6.254420,
-                              lng: 106.7815587,
-                              car: dummyCars[0]._id
-                            },
+                            { latitude: -6.260899, longitude: 106.781877, car: dummyCars[0]._id },
+                            { latitude: -6.260579, longitude: 106.781807, car: dummyCars[0]._id },
+                            { latitude: -6.260168, longitude: 106.781769, car: dummyCars[0]._id },
+                            { latitude: -6.259837, longitude: 106.781742, car: dummyCars[0]._id },
+                            { latitude: -6.259480, longitude: 106.781726, car: dummyCars[0]._id },
                             // mobil kedua
-                            {
-                              lat: -6.254399,
-                              lng: 106.7815587,
-                              car: dummyCars[1]._id
-                            },
-                            {
-                              lat: -6.254410,
-                              lng: 106.7815599,
-                              car: dummyCars[1]._id
-                            },
-                            {
-                              lat: -6.254415,
-                              lng: 106.7815599,
-                              car: dummyCars[1]._id
-                            },
-                            {
-                              lat: -6.254430,
-                              lng: 106.7815590,
-                              car: dummyCars[1]._id
-                            },
-                            {
-                              lat: -6.254422,
-                              lng: 106.7815589,
-                              car: dummyCars[1]._id
-                            },
+                            { latitude: -6.259171, longitude: 106.781691, car: dummyCars[1]._id },
+                            { latitude: -6.258742, longitude: 106.781642, car: dummyCars[1]._id },
+                            { latitude: -6.258059, longitude: 106.781621, car: dummyCars[1]._id },
+                            { latitude: -6.257408, longitude: 106.781610, car: dummyCars[1]._id },
+                            { latitude: -6.256741, longitude: 106.781610, car: dummyCars[1]._id },
                             // mobil ketiga
-                            {
-                              lat: -6.254359,
-                              lng: 106.7815567,
-                              car: dummyCars[2]._id
-                            },
-                            {
-                              lat: -6.254400,
-                              lng: 106.7815589,
-                              car: dummyCars[2]._id
-                            },
-                            {
-                              lat: -6.254411,
-                              lng: 106.7815589,
-                              car: dummyCars[2]._id
-                            },
-                            {
-                              lat: -6.254422,
-                              lng: 106.7815589,
-                              car: dummyCars[2]._id
-                            },
-                            {
-                              lat: -6.254412,
-                              lng: 106.7815599,
-                              car: dummyCars[2]._id
-                            }
+                            { latitude: -6.256080, longitude: 106.781621, car: dummyCars[2]._id },
+                            { latitude: -6.255339, longitude: 106.781664, car: dummyCars[2]._id },
+                            { latitude: -6.254699, longitude: 106.781648, car: dummyCars[2]._id },
+                            { latitude: -6.254091, longitude: 106.781621, car: dummyCars[2]._id },
+                            { latitude: -6.253355, longitude: 106.781610, car: dummyCars[2]._id },
+
+                            // mobil pertama
+                            { latitude: -6.261899, longitude: 106.781877, car: dummyCars[0]._id },
+                            { latitude: -6.261579, longitude: 106.781807, car: dummyCars[0]._id },
+                            { latitude: -6.261168, longitude: 106.781769, car: dummyCars[0]._id },
+                            { latitude: -6.258837, longitude: 106.781742, car: dummyCars[0]._id },
+                            { latitude: -6.258480, longitude: 106.781726, car: dummyCars[0]._id },
+                            // mobil kedua
+                            { latitude: -6.258171, longitude: 106.781691, car: dummyCars[1]._id },
+                            { latitude: -6.259742, longitude: 106.781642, car: dummyCars[1]._id },
+                            { latitude: -6.259059, longitude: 106.781621, car: dummyCars[1]._id },
+                            { latitude: -6.258408, longitude: 106.781610, car: dummyCars[1]._id },
+                            { latitude: -6.256741, longitude: 106.781610, car: dummyCars[1]._id },
+                            // mobil ketiga
+                            { latitude: -6.257080, longitude: 106.781621, car: dummyCars[2]._id },
+                            { latitude: -6.256339, longitude: 106.781664, car: dummyCars[2]._id },
+                            { latitude: -6.254699, longitude: 106.781648, car: dummyCars[2]._id },
+                            { latitude: -6.255091, longitude: 106.781621, car: dummyCars[2]._id },
+                            { latitude: -6.254355, longitude: 106.781610, car: dummyCars[2]._id }
                           ]
 
                           dummyPositions.map((position, idx) => {
