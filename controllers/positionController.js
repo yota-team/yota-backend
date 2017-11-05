@@ -32,7 +32,20 @@ module.exports = {
         })
         var filteredByMinute = filteredByHour.filter(data => {
           var minute = data.createdAt.toString().split(' ')[4].split(':')[1]
-          return parseInt(minute) == req.query.minute
+          let menit = req.query.minute
+          if(menit <= 9){
+            return parseInt(minute) <= 9
+          } else if(menit <= 19){
+            return parseInt(minute) > 10 && parseInt(minute) <= 19
+          } else if(menit <= 29){
+            return parseInt(minute) > 20 && parseInt(minute) <= 29
+          } else if(menit <= 39){
+            return parseInt(minute) > 30 && parseInt(minute) <= 39
+          } else if(menit <= 49){
+            return parseInt(minute) > 40 && parseInt(minute) <= 49
+          } else if(menit <= 59){
+            return parseInt(minute) > 50 && parseInt(minute) <= 59  
+          }
         })
         res.send(filteredByMinute)
       })
