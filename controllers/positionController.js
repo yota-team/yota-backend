@@ -44,7 +44,7 @@ module.exports = {
           } else if(menit <= 49){
             return parseInt(minute) > 40 && parseInt(minute) <= 49
           } else if(menit <= 59){
-            return parseInt(minute) > 50 && parseInt(minute) <= 59  
+            return parseInt(minute) > 50 && parseInt(minute) <= 59
           }
         })
         res.send(filteredByMinute)
