@@ -10,14 +10,14 @@ const Destination = require('../models/Destination')
 chai.use(chaiHttp)
 
 var newPosition = {
-  lat: -6.123234,
-  lng: 123.987098,
+  latitude: -6.123234,
+  longitude: 123.987098,
   car: null
 }
 
 var newPosition2 = {
-  lat: -6.876345,
-  lng: 123.098345,
+  latitude: -6.876345,
+  longitude: 123.098345,
   car: null
 }
 
@@ -91,24 +91,24 @@ describe('TESTING CREATE POSITION: ', () => {
     })
   })
 
-  it (`should return response.body.lat = ${newPosition.lat}`, (done) => {
+  it (`should return response.body.latitude = ${newPosition.latitude}`, (done) => {
     chai.request(app)
     .post('/positions')
     .send(newPosition)
     .end((err, response) => {
       newPosition._id = response.body._id
-      response.body.lat.should.equal(newPosition.lat)
+      response.body.latitude.should.equal(newPosition.latitude)
       done()
     })
   })
 
-  it (`should return response.body.lng = ${newPosition.lng}`, (done) => {
+  it (`should return response.body.longitude = ${newPosition.longitude}`, (done) => {
     chai.request(app)
     .post('/positions')
     .send(newPosition)
     .end((err, response) => {
       newPosition._id = response.body._id
-      response.body.lng.should.equal(newPosition.lng)
+      response.body.longitude.should.equal(newPosition.longitude)
       done()
     })
   })
@@ -197,38 +197,38 @@ describe('TESTING GET ALL POSITIONS: ', () => {
     })
   })
 
-  it (`should return response.body[0].lat = ${newPosition.lat}`, (done) => {
+  it (`should return response.body[0].latitude = ${newPosition.latitude}`, (done) => {
     chai.request(app)
     .get('/positions')
     .end((err, response) => {
-      response.body[0].lat.should.equal(newPosition.lat)
+      response.body[0].latitude.should.equal(newPosition.latitude)
       done()
     })
   })
 
-  it (`should return response.body[0].lng = ${newPosition.lng}`, (done) => {
+  it (`should return response.body[0].longitude = ${newPosition.longitude}`, (done) => {
     chai.request(app)
     .get('/positions')
     .end((err, response) => {
-      response.body[0].lng.should.equal(newPosition.lng)
+      response.body[0].longitude.should.equal(newPosition.longitude)
       done()
     })
   })
 
-  it (`should return response.body[1].lat = ${newPosition2.lat}`, (done) => {
+  it (`should return response.body[1].latitude = ${newPosition2.latitude}`, (done) => {
     chai.request(app)
     .get('/positions')
     .end((err, response) => {
-      response.body[1].lat.should.equal(newPosition2.lat)
+      response.body[1].latitude.should.equal(newPosition2.latitude)
       done()
     })
   })
 
-  it (`should return response.body[1].lng = ${newPosition2.lng}`, (done) => {
+  it (`should return response.body[1].longitude = ${newPosition2.longitude}`, (done) => {
     chai.request(app)
     .get('/positions')
     .end((err, response) => {
-      response.body[1].lng.should.equal(newPosition2.lng)
+      response.body[1].longitude.should.equal(newPosition2.longitude)
       done()
     })
   })
@@ -316,20 +316,20 @@ describe('TESTING GET ALL POSITIONS: ', () => {
 //     })
 //   })
 //
-//   it (`should return response.body.lat = ${newPosition.lat}`, (done) => {
+//   it (`should return response.body.latitude = ${newPosition.latitude}`, (done) => {
 //     chai.request(app)
 //     .get(`/positions/${newPosition._id}`)
 //     .end((err, response) => {
-//       response.body.lat.should.equal(newPosition.lat)
+//       response.body.latitude.should.equal(newPosition.latitude)
 //       done()
 //     })
 //   })
 //
-//   it (`should return response.body.lng = ${newPosition.lng}`, (done) => {
+//   it (`should return response.body.longitude = ${newPosition.longitude}`, (done) => {
 //     chai.request(app)
 //     .get(`/positions/${newPosition._id}`)
 //     .end((err, response) => {
-//       response.body.lng.should.equal(newPosition.lng)
+//       response.body.longitude.should.equal(newPosition.longitude)
 //       done()
 //     })
 //   })
